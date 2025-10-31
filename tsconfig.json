@@ -1,0 +1,57 @@
+{
+  "compilerOptions": {
+    /* ✅ Target a modern baseline for Next.js 14 (not ES5) */
+    "target": "ESNext",
+
+    /* ✅ Includes DOM for browser APIs like document/window */
+    "lib": ["dom", "dom.iterable", "esnext"],
+
+    /* ✅ JS files allowed if needed */
+    "allowJs": true,
+
+    /* ✅ Skip checking dependencies' .d.ts files */
+    "skipLibCheck": true,
+
+    /* ✅ Strict type checking (good for production) */
+    "strict": true,
+
+    /* ✅ Don’t emit compiled JS — Next.js handles it */
+    "noEmit": true,
+
+    /* ✅ Modern module interop */
+    "esModuleInterop": true,
+
+    /* ✅ Required for Next.js 14 App Router */
+    "module": "esnext",
+    "moduleResolution": "bundler",
+
+    /* ✅ Allow importing .json and external files */
+    "resolveJsonModule": true,
+
+    /* ✅ Required by Next.js to detect isolated modules */
+    "isolatedModules": true,
+
+    /* ✅ Modern JSX transform */
+    "jsx": "preserve",
+
+    /* ✅ Faster incremental builds */
+    "incremental": true,
+
+    /* ✅ Next.js plugin for types */
+    "plugins": [
+      { "name": "next" }
+    ],
+
+    /* ✅ Aliases for cleaner imports */
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": ["node_modules"]
+}
