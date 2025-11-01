@@ -68,9 +68,9 @@ interface SiteContentContextType {
 const defaultSiteSettings: SiteSettings = {
   siteName: 'BikesDeal',
   siteDescription: 'Your trusted partner for buying and selling bikes',
-  contactEmail: 'info@bikesdeal.com',
+  contactEmail: 'bikesdealin@gmail.com',
   contactPhone: '+91 9876543210',
-  address: '123 Bike Street, Mumbai, Maharashtra 400001',
+  address: 'Near iMed Hospital, Kate Patil Chowk Mumbai, Maharashtra 400001',
   socialMedia: {
     facebook: 'https://facebook.com/bikesdeal',
     twitter: 'https://twitter.com/bikesdeal',
@@ -99,9 +99,9 @@ const defaultSiteSettings: SiteSettings = {
 const defaultContentSections: ContentSection[] = [
   {
     id: '1',
-    title: 'Hero Section',
+    title: 'Home',
     content: 'Find Your Perfect Ride Today',
-    description: 'Main hero section content',
+    description: 'Main Home content',
     images: [],
     isVisible: true,
     order: 1,
@@ -139,7 +139,7 @@ const defaultContentSections: ContentSection[] = [
     fields: {
       siteName: 'BikesDeal',
       navigationItems: [
-        { name: 'Hero Section', href: '#hero' },
+        { name: 'Home', href: '#hero' },
         { name: 'Services', href: '#services' },
         { name: 'Testimonials', href: '#testimonials' },
         { name: 'Partners', href: '#partners' },
@@ -160,9 +160,9 @@ const defaultContentSections: ContentSection[] = [
     fields: {
       companyName: 'BikesDeal',
       companyDescription: 'India\'s most trusted platform for buying and selling pre-owned motorcycles. Get the best value for your bike with our transparent and hassle-free process.',
-      phone: '+91-9876543210',
-      email: 'info@bikesdeal.com',
-      address: '123 Bike Street, Mumbai, 400001',
+      phone: '+91-8055224418',
+      email: 'bikesdealin@gmail.com',
+      address: 'Near iMed Hospital, Kate Patil Chowk Pimple Saudagar, Pune - 411027',
       newsletterTitle: 'Stay Updated',
       newsletterDescription: 'Subscribe to get the latest news and offers',
       subscribeButtonText: 'Subscribe',

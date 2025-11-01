@@ -1140,7 +1140,7 @@ export function BackgroundVideoTab({
             <div className="flex items-center justify-between">
               <div>
                 <label className="text-sm font-medium text-gray-700">Enable Background Video</label>
-                <p className="text-xs text-gray-500">Show video as background on the hero section</p>
+                <p className="text-xs text-gray-500">Show video as background on the Home</p>
               </div>
               <button
                 onClick={toggleVideo}

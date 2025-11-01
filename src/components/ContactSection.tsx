@@ -36,17 +36,17 @@ export default function ContactSection() {
     {
       icon: Phone,
       title: 'Phone',
-      details: ['+91-9876543210', '+91-9876543211'],
+      details: ['+91-8055224418'],
     },
     {
       icon: Mail,
       title: 'Email',
-      details: ['info@bikesdeal.com', 'support@bikesdeal.com'],
+      details: ['bikesdealin@gmail.com'],
     },
     {
       icon: MapPin,
       title: 'Address',
-      details: ['BikesDeal HQ', '123 Bike Street, Mumbai, 400001'],
+      details: ['Shubham Heights Shop No. 1,', 'Near iMed Hospital, Kate Patil Chowk Pimple Saudagar, Pune - 411027'],
     },
     {
       icon: Clock,

@@ -157,7 +157,7 @@ export default function AdminPanel() {
       const defaultSections: ContentSection[] = [
         {
           id: "1",
-          title: "Hero Section",
+          title: "Home",
           content: "Just Instant Payment in 30 MINUTES",
           images: [],
           isVisible: true,
@@ -385,7 +385,7 @@ function WebsiteEditorTab() {
     header: {
       siteName: "BikesDeal",
       navigationItems: [
-        { name: "Hero Section", href: "#hero" },
+        { name: "Home", href: "#hero" },
         { name: "Services", href: "#services" },
         { name: "Testimonials", href: "#testimonials" },
         { name: "Partners", href: "#partners" },
@@ -398,9 +398,9 @@ function WebsiteEditorTab() {
       companyName: "BikesDeal",
       companyDescription:
         "India's most trusted platform for buying and selling pre-owned motorcycles. Get the best value for your bike with our transparent and hassle-free process.",
-      phone: "+91-9876543210",
-      email: "info@bikesdeal.com",
-      address: "123 Bike Street, Mumbai, 400001",
+      phone: "+91-8055224418",
+      email: "bikesdealin@gmail.com",
+      address: "Near iMed Hospital, Kate Patil Chowk Pimple Saudagar, Pune - 411027",
       newsletterTitle: "Stay Updated",
       newsletterDescription: "Subscribe to get the latest news and offers",
       subscribeButtonText: "Subscribe",
@@ -459,15 +459,15 @@ function WebsiteEditorTab() {
       contactInfo: [
         {
           title: "Phone",
-          details: ["+91-9876543210", "+91-9876543211"],
+          details: ["+91-8055224418", "+91-9876543211"],
         },
         {
           title: "Email",
-          details: ["info@bikesdeal.com", "support@bikesdeal.com"],
+          details: ["bikesdealin@gmail.com"],
         },
         {
           title: "Address",
-          details: ["BikesDeal Headquarters", "123 Bike Street, Mumbai, 400001"],
+          details: ["BikesDeal Headquarters", "Near iMed Hospital, Kate Patil Chowk Pimple Saudagar, Pune - 411027"],
         },
         {
           title: "Working Hours",
@@ -582,9 +582,9 @@ function WebsiteEditorTab() {
       },
       {
         id: "1",
-        title: "Hero Section",
+        title: "Home",
         content: "Find Your Perfect Ride Today",
-        description: "Main hero section content",
+        description: "Main Home content",
         images: [],
         isVisible: true,
         order: 1,
@@ -720,7 +720,7 @@ function WebsiteEditorTab() {
 
   const sections = [
     { id: "header", name: "Header & Navigation", icon: "🏠" },
-    { id: "hero", name: "Hero Section", icon: "🎯" },
+    { id: "hero", name: "Home", icon: "🎯" },
     { id: "contact", name: "Contact Information", icon: "📞" },
     { id: "footer", name: "Footer & Links", icon: "🔗" },
   ];
@@ -848,10 +848,10 @@ function WebsiteEditorTab() {
               </div>
             )}
 
-            {/* Hero Section */}
+            {/* Home */}
             {activeSection === "hero" && (
               <div className="space-y-6">
-                <h3 className="text-xl font-semibold text-gray-900">Hero Section</h3>
+                <h3 className="text-xl font-semibold text-gray-900">Home</h3>
 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Main Title</label>
@@ -1651,9 +1651,9 @@ function SettingsTab() {
         const defaultSettings = {
           siteName: "BikesDeal",
           siteDescription: "Your trusted partner for buying and selling bikes",
-          contactEmail: "info@bikesdeal.com",
+          contactEmail: "bikesdealin@gmail.com",
           contactPhone: "+91 9876543210",
-          address: "123 Bike Street, Mumbai, Maharashtra 400001",
+          address: "Near iMed Hospital, Kate Patil Chowk Mumbai, Maharashtra 400001",
           socialMedia: {},
           seo: {
             metaTitle: "BikesDeal - Buy & Sell Bikes Online",
@@ -1813,7 +1813,7 @@ function SettingsTab() {
         {!backgroundVideo.url && (
           <div className="mt-6 p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
             <h4 className="text-sm font-medium text-yellow-900 mb-2">⚠️ No Background Video Uploaded</h4>
-            <p className="text-sm text-yellow-800">Currently, the hero section is using a gradient background. Upload a video above and enable it to show a background video on your website.</p>
+            <p className="text-sm text-yellow-800">Currently, the Home is using a gradient background. Upload a video above and enable it to show a background video on your website.</p>
           </div>
         )}
 

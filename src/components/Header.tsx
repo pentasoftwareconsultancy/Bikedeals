@@ -18,7 +18,7 @@ export default function Header({ onSellClick }: HeaderProps) {
   const { content } = useSiteContent()
 
   const defaultNavItems: NavItem[] = [
-    { name: 'Hero Section', href: '#hero' },
+    { name: 'Home', href: '#hero' },
     { name: 'Services', href: '#services' },
     { name: 'Bikes for Sale', href: '#bikes' },
     { name: 'Testimonials', href: '#testimonials' },

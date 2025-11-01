@@ -121,20 +121,20 @@ export default function Footer() {
                   <div className="flex items-center">
                     <Phone size={16} className="mr-3 text-red-500" />
                     <span className="text-gray-300">
-                      {footerContent?.fields?.phone || '+91-9876543210'}
+                      {footerContent?.fields?.phone || '+91-8055224418'}
                     </span>
                   </div>
                   <div className="flex items-center">
                     <Mail size={16} className="mr-3 text-red-500" />
                     <span className="text-gray-300">
-                      {footerContent?.fields?.email || 'info@bikesdeal.com'}
+                      {footerContent?.fields?.email || 'bikesdealin@gmail.com'}
                     </span>
                   </div>
                   <div className="flex items-start">
                     <MapPin size={16} className="mr-3 text-red-500 mt-1" />
                     <span className="text-gray-300">
                       {footerContent?.fields?.address ||
-                        '123 Bike Street, Mumbai, 400001'}
+                        'Near iMed Hospital, Kate Patil Chowk Pimple Saudagar, Pune - 411027'}
                     </span>
                   </div>
                 </div>

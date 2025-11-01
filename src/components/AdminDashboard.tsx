@@ -143,9 +143,9 @@ export default function AdminDashboard({ onLogout }: AdminDashboardProps) {
   const [siteSettings, setSiteSettings] = useState<SiteSettings>({
     siteName: 'BikesDeal',
     siteDescription: 'Your trusted bike selling platform',
-    contactEmail: 'info@bikesdeal.com',
+    contactEmail: 'bikesdealin@gmail.com',
     contactPhone: '+1 (555) 123-4567',
-    address: '123 Bike Street, City, State 12345',
+    address: 'Near iMed Hospital, Kate Patil Chowk City, State 12345',
     socialMedia: {},
     seo: {
       metaTitle: 'BikesDeal - Sell Your Bike Instantly',
@@ -204,7 +204,7 @@ export default function AdminDashboard({ onLogout }: AdminDashboardProps) {
       const defaultSections: ContentSection[] = [
         {
           id: '1',
-          title: 'Hero Section',
+          title: 'Home',
           content: 'Just Instant Payment in 30 MINUTES',
           description: 'Main hero banner with call-to-action',
           images: [],

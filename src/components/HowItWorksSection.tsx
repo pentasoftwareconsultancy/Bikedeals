@@ -223,7 +223,7 @@ export default function HowItWorksSection() {
             Start Selling Now
           </button>
           <button className="btn-glow border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-white px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300">
-            Call Us: +91-9876543210
+            Call Us: +91-8055224418
           </button>
         </motion.div>
       </div>
