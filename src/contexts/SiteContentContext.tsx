@@ -66,7 +66,7 @@ interface SiteContentContextType {
 }
 
 const defaultSiteSettings: SiteSettings = {
-  siteName: 'BikesDeal',
+  siteName: 'BikesDealing',
   siteDescription: 'Your trusted partner for buying and selling bikes',
   contactEmail: 'bikesdealin@gmail.com',
   contactPhone: '+91-8055224418',
@@ -78,7 +78,7 @@ const defaultSiteSettings: SiteSettings = {
     linkedin: 'https://linkedin.com/company/bikesdeal'
   },
   seo: {
-    metaTitle: 'BikesDeal - Buy & Sell Bikes Online',
+    metaTitle: 'BikesDealing - Buy & Sell Bikes Online',
     metaDescription: 'Find the best deals on bikes. Buy and sell motorcycles, scooters, and bicycles with ease.',
     keywords: ['bikes', 'motorcycles', 'scooters', 'buy bikes', 'sell bikes', 'bike deals']
   },
@@ -137,7 +137,7 @@ const defaultContentSections: ContentSection[] = [
     isVisible: true,
     order: 0,
     fields: {
-      siteName: 'BikesDeal',
+      siteName: 'BikesDealing',
       navigationItems: [
         { name: 'Home', href: '#hero' },
         { name: 'Services', href: '#services' },
@@ -158,7 +158,7 @@ const defaultContentSections: ContentSection[] = [
     isVisible: true,
     order: 100,
     fields: {
-      companyName: 'BikesDeal',
+      companyName: 'BikesDealing',
       companyDescription: 'India\'s most trusted platform for buying and selling pre-owned motorcycles. Get the best value for your bike with our transparent and hassle-free process.',
       phone: '+91-8055224418',
       email: 'bikesdealin@gmail.com',
@@ -166,7 +166,7 @@ const defaultContentSections: ContentSection[] = [
       newsletterTitle: 'Stay Updated',
       newsletterDescription: 'Subscribe to get the latest news and offers',
       subscribeButtonText: 'Subscribe',
-      copyright: '© 2025 BikesDeal. All rights reserved. | Made with ❤️ in India'
+      copyright: '© 2025 BikesDealing. All rights reserved. | Made with ❤️ in India'
     }
   },
   {
