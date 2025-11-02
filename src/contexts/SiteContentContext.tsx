@@ -69,7 +69,7 @@ const defaultSiteSettings: SiteSettings = {
   siteName: 'BikesDeal',
   siteDescription: 'Your trusted partner for buying and selling bikes',
   contactEmail: 'bikesdealin@gmail.com',
-  contactPhone: '+91 9876543210',
+  contactPhone: '+91-8055224418',
   address: 'Near iMed Hospital, Kate Patil Chowk Mumbai, Maharashtra 400001',
   socialMedia: {
     facebook: 'https://facebook.com/bikesdeal',
