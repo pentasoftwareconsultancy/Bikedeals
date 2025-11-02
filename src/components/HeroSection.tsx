@@ -147,7 +147,7 @@ export default function HeroSection({ onSellClick }: HeroSectionProps) {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-glow"
         >
-          {heroContent?.fields?.mainTitle || "BikesDeal"}
+          {heroContent?.fields?.mainTitle || "BikesDealing"}
         </motion.h1>
 
         <motion.p
