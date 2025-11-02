@@ -213,3 +213,5 @@ export default function HeroSection({ onSellClick }: HeroSectionProps) {
     </section>
   );
 }
+
+
