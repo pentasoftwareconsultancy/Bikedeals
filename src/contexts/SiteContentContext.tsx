@@ -206,41 +206,63 @@ export function SiteContentProvider({ children }: { children: ReactNode }) {
   const [siteSettings, setSiteSettings] = useState<SiteSettings>(defaultSiteSettings)
 
   // Load data from localStorage on mount
-  useEffect(() => {
-    const savedSections = localStorage.getItem('bikesdeal_content_sections')
-    const savedSettings = localStorage.getItem('bikesdeal_site_settings')
-    const savedVideoSettings = localStorage.getItem('backgroundVideoSettings')
+ useEffect(() => {
+  const CONTENT_VERSION = '1.2' // 🔁 change this number when you update defaults
 
-    if (savedSections) {
-      try {
-        setContentSections(JSON.parse(savedSections))
-      } catch (error) {
-        console.error('Error loading content sections:', error)
-      }
-    }
+  const savedVersion = localStorage.getItem('bikesdeal_content_version')
+  const savedSections = localStorage.getItem('bikesdeal_content_sections')
+  const savedSettings = localStorage.getItem('bikesdeal_site_settings')
+  const savedVideoSettings = localStorage.getItem('backgroundVideoSettings')
 
-    if (savedSettings) {
-      try {
-        const settings = JSON.parse(savedSettings)
-        setSiteSettings(settings)
-      } catch (error) {
-        console.error('Error loading site settings:', error)
-      }
-    }
+  // 🧹 Reset if new version detected
+  if (savedVersion !== CONTENT_VERSION) {
+    console.log('🆕 New content version detected — resetting localStorage...')
+    localStorage.clear()
+    localStorage.setItem('bikesdeal_content_version', CONTENT_VERSION)
 
-    // Load background video settings from admin panel
-    if (savedVideoSettings) {
-      try {
-        const videoSettings = JSON.parse(savedVideoSettings)
-        setSiteSettings(prev => ({
-          ...prev,
-          backgroundVideo: videoSettings
-        }))
-      } catch (error) {
-        console.error('Error loading background video settings:', error)
-      }
+    // Apply defaults
+    setContentSections(defaultContentSections)
+    setSiteSettings(defaultSiteSettings)
+    return
+  }
+
+  // ✅ Load saved content if available
+  if (savedSections) {
+    try {
+      setContentSections(JSON.parse(savedSections))
+    } catch (error) {
+      console.error('Error loading content sections:', error)
     }
-  }, [])
+  } else {
+    setContentSections(defaultContentSections)
+  }
+
+  // ✅ Load saved site settings if available
+  if (savedSettings) {
+    try {
+      const settings = JSON.parse(savedSettings)
+      setSiteSettings(settings)
+    } catch (error) {
+      console.error('Error loading site settings:', error)
+    }
+  } else {
+    setSiteSettings(defaultSiteSettings)
+  }
+
+  // ✅ Load background video settings if available
+  if (savedVideoSettings) {
+    try {
+      const videoSettings = JSON.parse(savedVideoSettings)
+      setSiteSettings((prev) => ({
+        ...prev,
+        backgroundVideo: videoSettings,
+      }))
+    } catch (error) {
+      console.error('Error loading background video settings:', error)
+    }
+  }
+}, [])
+
 
   // Save to localStorage whenever data changes
   useEffect(() => {
